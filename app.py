@@ -27,21 +27,21 @@ df_vmais["Filial"] = df_vmais["Filial"].astype(str) + " - " + df_vmais["Nome FIl
 df_vmais["Região"] = df_vmais["Núm. Região"].astype(str) + " - " + df_vmais["Nome Região"].str.upper()
 df_vmais["Colaborador Sorteado"] = df_vmais["matricula"].astype(str) + " - " + df_vmais["Colab. Ganhador"]
 df_vmais.drop(columns=["Nome FIlial", "Nome Região", "Núm. Região", "matricula", "Colab. Ganhador"], inplace=True)
-df_vmais = df_vmais[["Data", "Região", "Filial", "Colaborador Sorteado"]]
+df_vmais = df_vmais[["Data", "Colaborador Sorteado", "Região", "Filial"]]
 
 # === df_estoque ===
 df_estoque["Filial"] = df_estoque["Filial"].astype(str) + " - " + df_estoque["Nome FIlial"]
 df_estoque["Região"] = df_estoque["Núm. Região"].astype(str) + " - " + df_estoque["Nome Região"].str.upper()
 df_estoque["Colaborador Sorteado"] = df_estoque["matricula"].astype(str) + " - " + df_estoque["Colab. Ganhador"]
 df_estoque.drop(columns=["Nome FIlial", "Nome Região", "Núm. Região", "matricula", "Colab. Ganhador"], inplace=True)
-df_estoque = df_estoque[["Data", "Região", "Filial", "Colaborador Sorteado"]]
+df_estoque = df_estoque[["Data", "Colaborador Sorteado", "Região", "Filial"]]
 
 # === df_epmais ===
 df_epmais["Filial"] = df_epmais["Filial"].astype(str) + " - " + df_epmais["Nome FIlial"]
 df_epmais["Região"] = df_epmais["Núm. Região"].astype(str) + " - " + df_epmais["Nome Região"].str.upper()
 df_epmais["Colaborador Sorteado"] = df_epmais["matricula"].astype(str) + " - " + df_epmais["Colab. Ganhador"]
 df_epmais.drop(columns=["Nome FIlial", "Nome Região", "Núm. Região", "matricula", "Colab. Ganhador"], inplace=True)
-df_epmais = df_epmais[["Data", "Região", "Filial", "Colaborador Sorteado"]]
+df_epmais = df_epmais[["Data", "Colaborador Sorteado", "Região", "Filial"]]
 # ========================================= DATA CLEANING ==============================================
 
 
