@@ -101,23 +101,23 @@ if "aba" not in st.session_state:
 # === BOTÕES DE NAVEGAÇÃO ===
 col1, col2, col3 = st.columns(3)
 with col1:
-    if st.button("📄 V+", use_container_width=True):
+    if st.button("🛒 V+", use_container_width=True):
         st.session_state.aba = "V+"
 with col2:
     if st.button("📦 Estoque", use_container_width=True):
         st.session_state.aba = "Estoque"
 with col3:
-    if st.button("📝 Ep+", use_container_width=True):
+    if st.button("💸 Ep+", use_container_width=True):
         st.session_state.aba = "Ep+"
 
 # === CONTEÚDO DAS "ABAS" ===
 st.markdown("---")
 if st.session_state.aba == "V+":
-    st.subheader("📄 Sorteio V+")
+    st.subheader("🛒 Sorteio V+")
     st.dataframe(df_vmais)
 elif st.session_state.aba == "Estoque":
     st.subheader("📦 Sorteio Estoque")
     st.dataframe(df_estoque)
 elif st.session_state.aba == "Ep+":
-    st.subheader("📝 Sorteio Ep+")
+    st.subheader("💸 Sorteio Ep+")
     st.dataframe(df_epmais)
